@@ -9,7 +9,7 @@ const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD
 // const MANAGER_PASSWORD = process.env.MANAGER_PASSWORD
 
 const LOGIN_URL = process.env.LOGIN_URL || 'http://localhost:6192/api/v2/users/login?portal=true';
-const API_URL = process.env.API_URL || 'http://localhost:6192/api/v2/report/transaction-report-admin?page=0&rowsPerPage=100&isArchived=false&startDate=1667932200&endDate=1667974019&includeChildVendors=true&isInPerson=true&isCSVRequest=false&showTrainingOnly=false&excludeSites=false&sortBy=%7B%7D';
+const API_URL = process.env.API_URL || '';
 let Bearer_Token = '';
 const LOAD = process.argv[2] || Number(process.env.LOAD) || 1;
 
